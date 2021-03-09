@@ -1,0 +1,208 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box; 
+}
+body{
+    background-image: linear-gradient(120deg,#220bf19a,#fffdfd);
+    font-weight: bold;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+.todo-in{
+    outline:none;
+    border:slategray;
+}
+header{
+    font-size: 1.5rem;
+}
+header,form{
+ min-height: 20vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+form input, form button{
+    padding:0.5rem;
+    font-size: 2rem;
+    background:white;
+}
+form button{
+    color:#041dfd;
+    border-style:none;
+    background: white;
+    outline:none;
+    cursor: pointer;
+    transition: all 0.3sec ease;
+}
+form button:hover{
+    background: #b1a2f6;
+    color:white;
+    
+}
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-lst{
+    min-width:30%;
+    list-style: none;
+}
+.todo{
+    margin: 0.5rem;
+    background: white;
+    color:black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease;
+}
+.todo li{
+    flex:1;
+}
+.trash-btn{
+    background:#b1a2f6;;
+    color:white;
+    border:none;
+    padding:1rem;
+    cursor:pointer;
+    font-size: 1rem;
+}
+.chk-btn{
+    background:rgb(168, 181, 255);
+    border:none;
+    outline:none;
+    font-size:1rem;
+    cursor: pointer;
+    color:white;
+    padding:1.20rem;
+}
+.todo-item{
+    padding:0rem 0.5rem;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+.completed_tasks{
+    text-decoration: line-through;
+    color: #888;
+  }
+  .fa-trash{
+      pointer-events: none;
+  }
+  .fa-check{
+      pointer-events: none;
+  }
+  @media only screen and (max-width: 500px) {
+    body {
+        background-image: linear-gradient(120deg,#3f32ff9a,#000000);
+        font-weight: bold;
+        color:white;
+        font-family: 'Poppins', sans-serif;
+        min-height: 100vh;
+        width:100%;
+    }
+    h1{
+        text-align: center;
+    }
+    .todo-in{
+        outline:none;
+        border:slategray;
+        width:60%;
+    }
+    header{
+        font-size: 1.5rem;
+    }
+    header,form{
+     min-height: 20vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+    form input, form button{
+        padding:0.5rem;
+        font-size: 2rem;
+        background:white;
+    }
+    form button{
+        color:#041dfd;
+        border-style:none;
+        background: white;
+        outline:none;
+        cursor: pointer;
+        transition: all 0.3sec ease;
+    }
+    form button:hover{
+        background: #b1a2f6;
+        color:white;
+        
+    }
+    .todo-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .todo-lst{
+        min-width:30%;
+        list-style: none;
+    }
+    .todo{
+        margin: 0.5rem;
+        background: white;
+        color:black;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 1s ease;
+    }
+    .todo li{
+        flex:1;
+    }
+    .trash-btn{
+        background:rgb(0, 0, 0);;
+        color:white;
+        border:none;
+        padding:1rem;
+        cursor:pointer;
+        font-size: 1rem;
+    }
+    .chk-btn{
+        background:grey;
+        border:none;
+        outline:none;
+        font-size:1rem;
+        cursor: pointer;
+        color:white;
+        padding:1.20rem;
+    }
+    .todo-item{
+        padding:0rem 0.5rem;
+    }
+    .completed{
+        text-decoration: line-through;
+        opacity: 0.5;
+    }
+    .fall {
+        transform: translateY(8rem) rotateZ(20deg);
+        opacity: 0;
+    }
+    .completed_tasks{
+        text-decoration: line-through;
+        color: #888;
+      }
+      .fa-trash{
+          pointer-events: none;
+      }
+      .fa-check{
+          pointer-events: none;
+      }
+  }
